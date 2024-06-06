@@ -1,0 +1,272 @@
+.navBarButton-Toggler{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+}
+
+.navBar{
+    display: block;
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.logo h2{
+    font-size: 0.7em;
+}
+.Directory{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.Directory *{
+    font-family: Poppins;
+}
+
+.logoPhoneVer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    margin-right: 10%;
+}
+.home-text img{
+    display: none;
+}
+
+.about *{
+    font-family: Poppins;
+}
+.products>iframe{
+    display: block;
+    margin: 40px auto;
+}
+
+#help-support,
+#delivery-services {
+    display: none;
+}
+
+/* .logo a:hover{
+    background: none;
+} */
+/* PHONE DESIGN */
+@media screen and (max-width: 767px){
+    .navBarButton-Toggler{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navBar{
+        background-color: rgba(0, 0, 0, 0.822);
+        height: 350px;
+        width: 100%;
+        margin-top: 100px;
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .Directory{
+        margin-top: 25px;
+        flex-direction: column;
+        text-align: center;
+        gap: 45px;
+        font-size: 0.7em;
+    }
+
+    .home{
+        margin-top: 0px;
+        padding-top: 130px;
+        background: none;
+        padding-left: 0px;
+    }
+    
+    .home-text>p{
+        width: 100%;
+    }
+    .home-text img{
+        display: block;
+        width: 100vw;
+        margin-top: 35px;
+    }
+    #res-gelsa{
+        margin: 0 auto;
+    }
+    .about{
+        padding: 10px;
+    }
+    .about-img{
+        max-width: 760px;
+    }
+    .about-img>img{
+        width: 100%;
+    }
+    .products{
+        padding: 0;
+    }
+    .products>iframe{
+        padding: 10px;
+        border-radius: 5%;
+    }
+    .customers{
+        padding: 20px 75px;
+    }
+    .customers-container{
+        overflow-x: scroll;
+        scroll-snap-type: mandatory;
+    }
+    .footer{
+        padding: 30px 20px;
+    }
+}
+
+/* glob design over tablet */
+@media screen and 
+(min-width: 768px){
+    .box{
+        width: calc(33.33% - 20px);
+    }
+    .customers{
+        padding: 10px;
+    }
+    .customers-container{
+        overflow-x: scroll;
+        scroll-snap-type: mandatory;
+    }
+}
+/* TABLET DESIGN */
+
+@media screen and 
+(min-width: 768px) and
+(max-width: 1023px){
+    .navBar{
+        width: 100%;
+        display: flex;
+    }
+    .Directory{
+        width: 57%;
+    }
+    .Directory a{
+        font-size: 0.5em;
+    }
+    .home{
+        margin-top: 137px;
+        align-items: start;
+        background: none;
+        padding: 0px;
+    }
+    .home-text{
+        background:url(images/AKHIRWAHD.jpg);
+        height: 70vh;
+    }
+    .home-text>p{
+        margin: 0 auto;
+        width: 95%;
+        font-size: 1.4em;
+    }
+    #res-gelsa{
+        margin: -260px auto auto auto;
+    }
+    .about{
+        margin-top: -300px;
+    }
+}
+
+/* NORMAL DESIGN */
+
+@media screen and 
+(min-width: 1024px){
+    .navBar{
+        width: 100%;
+        display: flex;
+    }
+    .Directory{
+        width: 70%;
+    }
+
+    .Icons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Icons img{
+        margin-right: 0.6em;
+    }
+    .home{
+        padding-top: 160px;
+        align-items: start;
+    }
+    .home-text>h1{
+        margin-bottom: 30px;
+    }
+    .home-text>p{
+        font-size: 1.5em;
+        width: 60%;
+        /* margin-right: 20%; */
+    }
+    .about-img>img{
+        width: 60%;
+    }
+}
+
+
+/* NEWDESIGN */
+@media screen and 
+(min-width: 1024px) and
+(max-width: 1210px){
+    .navBar{
+        width: 100%;
+        display: flex;
+    }
+    .Directory{
+        font-size: 0.6em;
+    }
+    .home{
+        margin-top: 137px;
+        align-items: start;
+        background: none;
+        padding: 0px;
+    }
+    .home-text{
+        background:url(images/AKHIRWAHD.jpg);
+        height: 70vh;
+    }
+    .home-text>p{
+        margin: 0 auto;
+        width: 95%;
+        font-size: 1.4em;
+    }
+    #res-gelsa{
+        margin: -260px auto auto auto;
+    }
+    .about{
+        margin-top: -300px;
+    }
+}
+
+/* XL DESIGN */
+
+@media screen and 
+(min-width: 1900px) {
+    .home-text>p{
+        font-size: 2em;
+    }
+    .about *{
+        font-size: 1.6em;
+    }
+}

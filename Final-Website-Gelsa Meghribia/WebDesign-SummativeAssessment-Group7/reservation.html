@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d35400; /* Moroccan orange */
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px;
+            font-size: 1.2em;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            color: #d35400; /* Moroccan orange */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="submit"] {
+            background-color: #d35400; /* Moroccan orange */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e67e22; /* Lighter Moroccan orange */
+        }
+
+        /* Moroccan pattern background for the form */
+        form {
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/arabesque.png');
+            background-size: cover;
+        }
+
+        /* Ensuring good readability on pattern */
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .reservation-complete {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .reservation-complete .btn {
+            background-color: #d35400; /* Moroccan orange */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .reservation-complete .btn:hover {
+            background-color: #e67e22; /* Lighter Moroccan orange */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Reservation Page</h1>
+    <p>Thank you for choosing to reserve your Gelsa with us. Please fill out the form below to complete your reservation.</p>
+
+    <form action="confirmation.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="date">Reservation Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Reservation Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+    </form>
+<div class="reservation-complete">
+ <a href="reservationcomplete.html" class="btn">Reserve Your Gelsa</a>
+</div>
+
+        
+   
+    
+    
+</body>
+</html>
